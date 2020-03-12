@@ -1,0 +1,182 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical" >
+
+    <!--    間違えるまで進める-->
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="数独クイズ"
+        android:layout_gravity="center_horizontal"
+        android:textAlignment="center"/>
+
+    <Space
+        android:layout_width="match_parent"
+        android:layout_height="13dp" />
+
+    <GridLayout
+        android:layout_width="370dp"
+        android:layout_height="465dp"
+        android:layout_gravity="center_horizontal"
+        android:columnCount="1"
+        android:rowCount="9">
+
+        <TextView
+            android:id="@+id/tv_N_quiz_th_"
+            android:layout_width="360dp"
+            android:layout_height="20dp"
+            android:layout_gravity="center_horizontal"
+            android:text="第１問"
+            android:textAlignment="center" />
+
+        <Space
+            android:layout_width="match_parent"
+            android:layout_height="10dp" />
+
+        <TextView
+            android:layout_width="360dp"
+            android:layout_height="20dp"
+            android:layout_gravity="center_horizontal"
+            android:text="時間の砂時計"
+            android:textAlignment="center" />
+
+        <Space
+            android:layout_width="match_parent"
+            android:layout_height="10dp" />
+
+
+        <TextView
+            android:id="@+id/tv_s_quiz_problem"
+            android:layout_width="360dp"
+            android:layout_height="59dp"
+            android:layout_gravity="center_horizontal"
+            android:gravity="center"
+            android:text="問題ないよう"
+            android:textAlignment="center"
+            app:layout_columnWeight="1"
+            app:layout_rowWeight="1" />
+
+        <Space
+            android:layout_width="match_parent"
+            android:layout_height="10dp" />
+
+        <Button
+            android:id="@+id/btn_s_quiz_choice1"
+            android:layout_width="360dp"
+            android:layout_height="40dp"
+            android:background="@drawable/btn_rtgl_green_yellow"
+            android:onClick="btn_choice_sudoku_problem_1"
+            android:text="間違えらた即終了！\n数独クイズをスタート"
+            app:layout_columnWeight="1"
+            app:layout_rowWeight="1" />
+
+        <Space
+            android:layout_width="match_parent"
+            android:layout_height="10dp" />
+
+        <Button
+            android:id="@+id/btn_s_quiz_choice2"
+            android:layout_width="360dp"
+            android:layout_height="40dp"
+            android:background="@drawable/btn_rtgl_green_yellow"
+            android:onClick="btn_choice_sudoku_problem_2"
+            android:text="間違えらた即終了！\n数独クイズをスタート"
+            app:layout_columnWeight="1"
+            app:layout_rowWeight="1" />
+
+        <Space
+            android:layout_width="match_parent"
+            android:layout_height="10dp" />
+
+        <Button
+            android:id="@+id/btn_s_quiz_choice3"
+            android:layout_width="360dp"
+            android:layout_height="40dp"
+            android:background="@drawable/btn_rtgl_green_yellow"
+            android:onClick="btn_choice_sudoku_problem_3"
+            android:text="間違えらた即終了！\n数独クイズをスタート"
+            app:layout_columnWeight="1"
+            app:layout_rowWeight="1" />
+
+        <Space
+            android:layout_width="match_parent"
+            android:layout_height="10dp" />
+
+        <Button
+            android:id="@+id/btn_s_quiz_choice4"
+            android:layout_width="360dp"
+            android:layout_height="40dp"
+            android:background="@drawable/btn_rtgl_green_yellow"
+            android:onClick="btn_choice_sudoku_problem_4"
+            android:text="間違えらた即終了！\n数独クイズをスタート"
+            app:layout_columnWeight="1"
+            app:layout_rowWeight="1" />
+
+        <Space
+            android:layout_width="match_parent"
+            android:layout_height="10dp" />
+
+
+        <TextView
+            android:id="@+id/tv_sudoku_quiz_comment"
+            android:layout_width="360dp"
+            android:layout_height="20dp"
+            android:layout_gravity="center_horizontal"
+            android:text="解説："
+            android:textAlignment="center" />
+
+        <Space
+            android:layout_width="match_parent"
+            android:layout_height="10dp" />
+
+
+        <TextView
+            android:id="@+id/tv_sudoku_quiz_true_or_false"
+            android:layout_width="360dp"
+            android:layout_height="20dp"
+            android:layout_gravity="center_horizontal"
+            android:text="※間違えたら即終了"
+            android:textAlignment="center" />
+
+        <Space
+            android:layout_width="match_parent"
+            android:layout_height="15dp" />
+
+
+        <TextView
+            android:layout_width="360dp"
+            android:layout_height="20dp"
+            android:layout_gravity="center_horizontal"
+            android:text="※間違えたら即終了"
+            android:textAlignment="center" />
+
+        <Button
+            android:id="@+id/return_to_sudoku_quiz_home"
+            android:layout_width="match_parent"
+            android:layout_height="47dp"
+            android:onClick="return_home"
+            android:text="数独クイズのホームに戻る" />
+
+    </GridLayout>
+
+    <Space
+        android:layout_width="match_parent"
+        android:layout_height="20dp" />
+
+    <Button
+        android:id="@+id/button_to_sudoku_home_from_demo"
+        android:layout_width="match_parent"
+        android:layout_height="47dp"
+        android:onClick="return_home"
+        android:text="ホームに戻る"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.432" />
+
+</LinearLayout>

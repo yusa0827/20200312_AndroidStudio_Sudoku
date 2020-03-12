@@ -1,0 +1,149 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical" >
+
+<!--    間違えるまで進める-->
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="数独クイズ"
+        android:layout_gravity="center_horizontal"
+        android:textAlignment="center"/>
+
+    <Space
+        android:layout_width="match_parent"
+        android:layout_height="20dp" />
+
+    <GridLayout
+        android:layout_width="360dp"
+        android:layout_height="360dp"
+        android:layout_gravity="center_horizontal"
+        android:columnCount="1"
+        android:rowCount="9">
+
+        <TextView
+            android:id="@+id/textView1"
+            android:layout_width="360dp"
+            android:layout_height="20dp"
+            android:text="目指せ数独クイズマスター"
+            android:layout_gravity="center_horizontal"
+            android:textAlignment="center"/>
+
+
+        <TextView
+            android:id="@+id/textView2"
+            android:layout_width="360dp"
+            android:layout_height="20dp"
+            android:text="・問題は全問でY"
+            android:layout_gravity="center_horizontal"
+            android:textAlignment="center"
+            app:layout_columnWeight="1"
+            app:layout_rowWeight="1"/>
+
+        <TextView
+            android:id="@+id/textView3"
+            android:layout_width="360dp"
+            android:layout_height="20dp"
+            android:text="・間違えたら即終了"
+            android:layout_gravity="center_horizontal"
+            android:textAlignment="center"
+            app:layout_columnWeight="1"
+            app:layout_rowWeight="1"/>
+
+
+        <TextView
+            android:id="@+id/textView4"
+            android:layout_width="360dp"
+            android:layout_height="20dp"
+            android:text="・選択肢は全部で5つ"
+            android:layout_gravity="center_horizontal"
+            android:textAlignment="center"
+            app:layout_columnWeight="1"
+            app:layout_rowWeight="1"/>
+
+        <TextView
+            android:id="@+id/textView5"
+            android:layout_width="360dp"
+            android:layout_height="20dp"
+            android:text="・さまざまな数独に関するジャンル"
+            android:layout_gravity="center_horizontal"
+            android:textAlignment="center"
+            app:layout_columnWeight="1"
+            app:layout_rowWeight="1"/>
+
+        <TextView
+            android:layout_width="360dp"
+            android:layout_height="20dp"
+            android:text="・制限時間は１問につき30秒"
+            android:layout_gravity="center_horizontal"
+            android:textAlignment="center"
+            app:layout_columnWeight="1"
+            app:layout_rowWeight="1"/>
+
+        <TextView
+            android:id="@+id/textView7"
+            android:layout_width="360dp"
+            android:layout_height="20dp"
+            android:text="※まれにアプリ作成者に関するクイズも含まれています"
+            android:layout_gravity="center_horizontal"
+            android:textAlignment="center"
+            app:layout_columnWeight="1"
+            app:layout_rowWeight="1"/>
+
+        <Space
+        android:layout_width="match_parent"
+        android:layout_height="20dp" />
+
+
+        <TextView
+            android:id="@+id/textView6"
+            android:layout_width="360dp"
+            android:layout_height="20dp"
+            android:text="前回のクリア数：X"
+            android:layout_gravity="center_horizontal"
+            android:textAlignment="center"
+            app:layout_columnWeight="1"
+            app:layout_rowWeight="1"/>
+
+        <Space
+            android:layout_width="match_parent"
+            android:layout_height="20dp" />
+
+        <Button
+            android:layout_width="360dp"
+            android:layout_height="76dp"
+            android:background="#e5fbfa"
+            android:onClick="start_sudoku_quiz"
+            android:text="間違えらた即終了！\n数独クイズをスタート"
+            app:layout_columnWeight="1"
+            app:layout_rowWeight="1" />
+
+
+
+
+
+
+
+    </GridLayout>
+
+    <Space
+        android:layout_width="match_parent"
+        android:layout_height="20dp" />
+
+    <Button
+        android:id="@+id/button_to_sudoku_home_from_demo"
+        android:layout_width="match_parent"
+        android:layout_height="47dp"
+        android:onClick="return_home"
+        android:text="ホームに戻る"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.432" />
+
+</LinearLayout>

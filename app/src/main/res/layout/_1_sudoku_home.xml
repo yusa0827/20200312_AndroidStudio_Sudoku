@@ -1,0 +1,139 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical"
+    android:layout_margin="10dp">
+
+<!--画面いっぱいに表示させる-->
+
+
+
+<!--    app:autoSizeTextType="uniform"-->
+
+
+
+    <GridLayout
+
+
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_gravity="center"
+        android:columnCount="1"
+        android:rowCount="16">
+
+        <TextView
+            android:id="@+id/layout_text_"
+            android:layout_width="match_parent"
+            android:layout_height="34dp"
+            android:layout_gravity="center_horizontal"
+            android:gravity="center"
+            android:text="ホーム" />
+
+        <Space
+            android:id="@+id/layout_space"
+            tools:ignore="DuplicateIds"
+            android:layout_width="match_parent"
+            android:layout_height="20dp" />
+
+        <Button
+            android:id="@+id/button_sudoku_demo_demo"
+            android:layout_width="match_parent"
+            android:layout_height="60dp"
+            android:text="デモプログラムを開始" />
+
+        <TextView
+            android:id="@+id/layout_text_"
+            tools:ignore="DuplicateIds"
+            android:layout_width="match_parent"
+            android:layout_height="34dp"
+            android:layout_gravity="center_horizontal"
+            android:gravity="center"
+            android:text="基本的には解き方を確認できます" />
+
+        <Space
+            android:id="@+id/layout_space"
+            tools:ignore="DuplicateIds"
+            android:layout_width="match_parent"
+            android:layout_height="20dp" />
+
+        <Button
+            android:id="@+id/button_sudoku_train_"
+            android:layout_width="match_parent"
+            android:layout_height="60dp"
+            android:text="トレーニングプログラムを開始" />
+
+        <TextView
+            android:id="@+id/layout_text_"
+            tools:ignore="DuplicateIds"
+            android:layout_width="match_parent"
+            android:layout_height="34dp"
+            android:layout_gravity="center_horizontal"
+            android:gravity="center"
+            android:text="数独の問題を準備しています" />
+
+        <Space
+            android:id="@+id/layout_space"
+            tools:ignore="DuplicateIds"
+            android:layout_width="match_parent"
+            android:layout_height="20dp" />
+
+        <Button
+            android:id="@+id/button_sudoku_original_"
+            android:layout_width="match_parent"
+            android:layout_height="60dp"
+            android:text="オリジナルプログラムを開始" />
+        <TextView
+            android:id="@+id/layout_text_"
+            tools:ignore="DuplicateIds"
+            android:layout_width="match_parent"
+            android:layout_height="34dp"
+            android:layout_gravity="center_horizontal"
+            android:gravity="center"
+            android:text="数独の問題を入力して遊べます" />
+
+        <Space
+            android:id="@+id/layout_space"
+            tools:ignore="DuplicateIds"
+            android:layout_width="match_parent"
+            android:layout_height="20dp" />
+
+        <Button
+            android:id="@+id/button_sudoku_quiz"
+            android:layout_width="match_parent"
+            android:layout_height="60dp"
+            android:text="数独クイズを開始" />
+        <TextView
+            android:id="@+id/layout_text_"
+            tools:ignore="DuplicateIds"
+            android:layout_width="match_parent"
+            android:layout_height="34dp"
+            android:layout_gravity="center_horizontal"
+            android:gravity="center"
+            android:text="数独に関するクイズを準備しました" />
+
+        <Space
+            android:id="@+id/layout_space"
+            android:layout_width="match_parent"
+            android:layout_height="20dp"
+            tools:ignore="DuplicateIds" />
+
+        <Button
+            android:id="@+id/button_sudoku_maker_profile"
+            android:layout_width="match_parent"
+            android:layout_height="60dp"
+            android:text="作成者のプロフィール" />
+
+        <Space
+            android:id="@+id/layout_space"
+            android:layout_width="match_parent"
+            android:layout_height="20dp"
+            tools:ignore="DuplicateIds" />
+
+
+    </GridLayout>
+
+
+</LinearLayout>
